@@ -1,0 +1,11 @@
+html
+	head
+		title Jade
+	body
+		h3 Programación Estructurada en Jade
+		- var arreglo = [1,2,3,4,5,6,7,8,9,10];
+		- for(var i=0; i<arreglo.length; i++)
+			- if(arreglo[i] == 8)
+				p!= "<h3>Elemento: " + arreglo[i] + "</h3>"
+			- else
+				p Elemento #{arreglo[i]}
